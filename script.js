@@ -384,3 +384,66 @@ document.addEventListener('keydown', function(event) {
         }
     }
 });
+
+// Courses Modal Functions
+function openCoursesModal(section) {
+    const modal = document.getElementById('coursesModal');
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+
+    // Remove any existing highlights
+    document.querySelectorAll('#coursesModal .modal-section.highlight').forEach(el => {
+        el.classList.remove('highlight');
+    });
+
+    // Wait for modal to be fully displayed, then scroll to section
+    setTimeout(() => {
+        if (section) {
+            const targetSection = document.getElementById('modal-' + section);
+            if (targetSection) {
+                const modalContent = document.querySelector('#coursesModal .modal-content');
+                // Calculate scroll position (section offset relative to modal content)
+                const sectionTop = targetSection.offsetTop - modalContent.offsetTop - 20; // 20px offset for spacing
+                modalContent.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+
+                // Add highlight to the clicked section
+                targetSection.classList.add('highlight');
+
+                // Remove highlight after 3 seconds
+                setTimeout(() => {
+                    targetSection.classList.remove('highlight');
+                }, 3000);
+            }
+        } else {
+            // If no section specified, scroll to top
+            document.querySelector('#coursesModal .modal-content').scrollTop = 0;
+        }
+    }, 100);
+}
+
+function closeCoursesModal() {
+    const modal = document.getElementById('coursesModal');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto'; // Re-enable scrolling
+}
+
+// Close courses modal when clicking outside of it
+window.addEventListener('click', function(event) {
+    const coursesModal = document.getElementById('coursesModal');
+    if (event.target === coursesModal) {
+        closeCoursesModal();
+    }
+});
+
+// Close courses modal with Escape key (extends existing escape key functionality)
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        const coursesModal = document.getElementById('coursesModal');
+        if (coursesModal && coursesModal.style.display === 'block') {
+            closeCoursesModal();
+        }
+    }
+});

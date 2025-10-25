@@ -159,6 +159,55 @@ body {
     display: none;
 }
 
+/* Dropdown Icons */
+.dropdown-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 0.875rem 1.5rem;
+}
+
+.dropdown-icon {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 1rem !important;
+    margin: 0 !important;
+    font-size: 1rem;
+    box-shadow: none !important;
+    border-right: 1px solid #e0e0e0 !important;
+}
+
+.dropdown-icon:last-child {
+    border-right: none !important;
+}
+
+.dropdown-icon:hover {
+    background: transparent !important;
+    color: #1a1a1a;
+}
+
+.dropdown-icon i {
+    font-size: 1rem;
+    width: 1rem;
+    text-align: center;
+}
+
+.dropdown-icon .fa-linkedin-in {
+    font-size: 0.95rem;
+}
+
+.dropdown-icon .fa-download {
+    font-size: 0.9rem;
+}
+
 /* Burger Menu */
 .burger-menu {
     display: none;
@@ -643,6 +692,42 @@ p {
     border-left: 3px solid #1a1a1a;
 }
 
+.experience-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 2rem;
+    align-items: start;
+}
+
+.experience-image-placeholder {
+    width: 100%;
+    height: 196px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.experience-image-placeholder:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.experience-image-placeholder:hover img {
+    transform: scale(1.02);
+}
+
 .experience-meta {
     color: #666;
     font-size: 1rem;
@@ -681,6 +766,19 @@ p {
 
 .experience-item a:hover {
     border-bottom-width: 2px;
+}
+
+/* Section Intro CTA */
+.section-intro-cta {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 500;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Research Timeline Layout */
@@ -726,6 +824,43 @@ p {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
+}
+
+.research-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 2rem;
+    align-items: start;
+}
+
+.research-image-placeholder {
+    flex-shrink: 0;
+    width: 100%;
+    height: 196px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.research-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.research-image-placeholder:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.research-image-placeholder:hover img {
+    transform: scale(1.02);
 }
 
 .research-meta {
@@ -865,19 +1000,9 @@ p {
     transform: scale(1.05);
 }
 
-/* Watermark Project Number - Top Right */
+/* Watermark Project Number - Hidden */
 .project-carousel-card::before {
-    content: attr(data-index);
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    font-size: 6rem;
-    font-weight: 900;
-    color: rgba(255, 255, 255, 0.25);
-    letter-spacing: -6px;
-    line-height: 1;
-    z-index: 2;
-    pointer-events: none;
+    display: none;
 }
 
 /* Tech Badges - Hidden */
@@ -924,7 +1049,7 @@ p {
 
 .read-more-link {
     color: rgba(255, 255, 255, 0.95);
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: underline;
     text-underline-offset: 2px;
     cursor: pointer;
@@ -934,6 +1059,31 @@ p {
 .read-more-link:hover {
     color: #fff;
     text-decoration-thickness: 2px;
+}
+
+/* Project CTA Indicator - Overlay on image */
+.project-cta {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    padding: 0.625rem 1rem;
+    background: rgba(26, 26, 26, 0.85);
+    backdrop-filter: blur(4px);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    z-index: 3;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-carousel-card.active:hover .project-cta {
+    background: rgba(0, 0, 0, 0.95);
+    transform: translateX(3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Carousel Arrows */
@@ -1006,6 +1156,40 @@ p {
     border-radius: 3px;
 }
 
+/* View All Projects Button */
+.view-all-projects-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.view-all-projects-btn {
+    font-size: 0.95rem;
+    padding: 0.875rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.view-all-projects-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* View All Activities Button */
+.view-all-activities-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.view-all-activities-btn {
+    font-size: 0.95rem;
+    padding: 0.875rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.view-all-activities-btn:hover {
+    transform: translateY(-2px);
+}
+
 /* Courses & Programs - Masonry Layout */
 .courses-masonry {
     display: grid;
@@ -1023,6 +1207,8 @@ p {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    position: relative;
 }
 
 .course-block:hover {
@@ -1035,11 +1221,30 @@ p {
     display: block;
     background: #1a1a1a;
     color: #fff;
-    padding: 0.625rem 1.25rem;
+    padding: 0.625rem 3.5rem 0.625rem 1.25rem;
     font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
+    position: relative;
+}
+
+.course-tag::after {
+    content: '→';
+    position: absolute;
+    top: 50%;
+    right: 1.25rem;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    color: #fff;
+    opacity: 1;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    line-height: 1;
+}
+
+.course-block:hover .course-tag::after {
+    right: 1rem;
 }
 
 .course-block h4 {
@@ -1160,6 +1365,24 @@ p {
     height: 100%;
 }
 
+.achievement-item::after {
+    content: '→';
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    color: #696969;
+    transition: all 0.3s ease;
+    opacity: 0.5;
+}
+
+.achievement-item:hover::after {
+    color: #1a1a1a;
+    opacity: 1;
+    right: 1.25rem;
+}
+
 /* Grid placement */
 .achievement-item.large {
     grid-column: span 3;
@@ -1176,16 +1399,69 @@ p {
     grid-row: span 1;
 }
 
+/* Flute Row - Full Width Horizontal */
+.achievement-item.flute-row {
+    grid-column: span 6;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    min-height: 236px;
+    height: auto;
+}
+
+.flute-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.flute-content .achievement-category {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.flute-content .achievement-stats {
+    margin: 0.5rem 0;
+}
+
+.flute-content .achievement-roles {
+    margin-top: 0.5rem;
+}
+
+.flute-image {
+    flex-shrink: 0;
+    width: 280px;
+    height: 196px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.flute-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+
+.achievement-item.flute-row:hover .flute-image img {
+    transform: scale(1.05);
+}
+
 /* Typography */
 .achievement-category {
-    font-size: 1.1rem;
+    font-size: 0.75rem;
     font-weight: 800;
     color: #000;
-    letter-spacing: -0.3px;
+    letter-spacing: 1.5px;
     margin-bottom: 0.75rem;
     text-transform: uppercase;
-    font-size: 0.75rem;
-    letter-spacing: 1.5px;
 }
 
 .achievement-stats {
@@ -1496,22 +1772,40 @@ p {
 .entry-metrics {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 1rem;
+    gap: 1.75rem;
+    margin-top: 2rem;
 }
 
 .metric-item {
-    font-size: 0.95rem;
-    color: #555;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.75rem 1.25rem;
+    background: #1a1a1a;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.875rem;
     line-height: 1.5;
 }
 
+.metric-item svg {
+    color: #ffd700;
+    flex-shrink: 0;
+}
+
+.metric-item:hover {
+    background: #000;
+    transform: translateX(4px);
+}
+
 .metric-value {
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: #1a1a1a;
-    margin-right: 0.5rem;
-    letter-spacing: -1px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #fff;
+    margin-right: 0;
+    letter-spacing: 0;
 }
 
 .entry-right {
@@ -1520,11 +1814,47 @@ p {
     gap: 1.5rem;
 }
 
+.entry-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 224px;
+    gap: 2rem;
+    align-items: start;
+}
+
 .entry-description {
     font-size: 1.05rem;
     line-height: 1.8;
     color: #444;
     margin: 0;
+}
+
+.entry-image {
+    width: 100%;
+    height: 224px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.entry-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.entry-image:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.entry-image:hover img {
+    transform: scale(1.02);
 }
 
 .entry-recognition {
@@ -1668,7 +1998,8 @@ footer p {
         box-shadow: none;
         min-width: 100%;
         transform: none;
-        display: contents;
+        display: flex;
+        flex-direction: column;
     }
 
     .dropdown-menu a {
@@ -1729,6 +2060,21 @@ footer p {
 
     .nav-links a::after {
         bottom: 0;
+    }
+
+    /* Dropdown Icons Mobile */
+    .dropdown-icons {
+        padding: 1rem 0;
+        gap: 0;
+    }
+
+    .dropdown-icon {
+        padding: 0 1.25rem !important;
+        font-size: 1.1rem;
+    }
+
+    .dropdown-icon i {
+        font-size: 1.1rem;
     }
 
     .container {
@@ -1843,11 +2189,9 @@ footer p {
         height: 460px;
     }
 
-    /* Smaller watermark for mobile */
+    /* Watermark hidden for mobile */
     .project-carousel-card::before {
-        font-size: 4rem;
-        top: 1rem;
-        right: 1rem;
+        display: none;
     }
 
     .project-carousel-card.prev {
@@ -1894,6 +2238,18 @@ footer p {
         font-size: 0.8rem;
     }
 
+    .project-cta {
+        top: 1rem;
+        right: 1rem;
+        padding: 0.5rem 0.875rem;
+        font-size: 0.7rem;
+    }
+
+    .section-intro-cta {
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+    }
+
     .carousel-indicators {
         margin-top: 1.5rem;
     }
@@ -1907,6 +2263,24 @@ footer p {
         width: 20px;
     }
 
+    .view-all-projects-wrapper {
+        margin-top: 2rem;
+    }
+
+    .view-all-projects-btn {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .view-all-activities-wrapper {
+        margin-top: 2rem;
+    }
+
+    .view-all-activities-btn {
+        width: 100%;
+        max-width: 320px;
+    }
+
     .awards-list {
         grid-template-columns: 1fr;
     }
@@ -1915,6 +2289,19 @@ footer p {
     .courses-masonry {
         grid-template-columns: 1fr;
         gap: 1.25rem;
+    }
+
+    .course-tag {
+        padding-right: 3rem;
+    }
+
+    .course-tag::after {
+        font-size: 1.1rem;
+        right: 1rem;
+    }
+
+    .course-block:hover .course-tag::after {
+        right: 0.875rem;
     }
 
     /* Extracurricular Mobile */
@@ -1933,6 +2320,17 @@ footer p {
 
     .achievement-item {
         padding: 1.25rem;
+    }
+
+    .achievement-item.flute-row {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .flute-image {
+        width: 100%;
+        height: 240px;
     }
 
     .achievement-category {
@@ -2014,6 +2412,26 @@ footer p {
         width: 100%;
     }
 
+    /* Experience Mobile */
+    .experience-content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .experience-image-placeholder {
+        height: 192px;
+    }
+
+    /* Research Mobile */
+    .research-content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .research-image-placeholder {
+        height: 192px;
+    }
+
     /* Volunteering Mobile */
     .volunteer-impact-bar {
         flex-direction: column;
@@ -2036,8 +2454,32 @@ footer p {
     }
 
     .entry-metrics {
-        flex-direction: row;
-        gap: 2rem;
+        flex-direction: column;
+        gap: 0.625rem;
+        margin-top: 1rem;
+    }
+
+    .metric-item {
+        padding: 0.625rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .metric-item svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .metric-value {
+        font-size: 0.8rem;
+    }
+
+    .entry-content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .entry-image {
+        height: 192px;
     }
 
     .entry-activities {
@@ -2103,9 +2545,7 @@ footer p {
     }
 
     .project-carousel-card::before {
-        font-size: 3rem;
-        top: 0.75rem;
-        right: 0.75rem;
+        display: none;
     }
 
     .project-carousel-card.prev {
@@ -2152,6 +2592,18 @@ footer p {
         font-size: 0.75rem;
     }
 
+    .project-cta {
+        top: 0.75rem;
+        right: 0.75rem;
+        padding: 0.4rem 0.75rem;
+        font-size: 0.65rem;
+    }
+
+    .section-intro-cta {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
     .carousel-indicators {
         margin-top: 1.25rem;
     }
@@ -2163,6 +2615,24 @@ footer p {
 
     .indicator.active {
         width: 18px;
+    }
+
+    .view-all-projects-wrapper {
+        margin-top: 1.5rem;
+    }
+
+    .view-all-projects-btn {
+        font-size: 0.9rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .view-all-activities-wrapper {
+        margin-top: 1.5rem;
+    }
+
+    .view-all-activities-btn {
+        font-size: 0.9rem;
+        padding: 0.75rem 1.5rem;
     }
 
     /* Volunteering Extra Small Screens */
@@ -2190,18 +2660,43 @@ footer p {
     .entry-metrics {
         flex-direction: column;
         gap: 0.5rem;
-    }
-
-    .metric-value {
-        font-size: 1.25rem;
+        margin-top: 0.75rem;
     }
 
     .metric-item {
-        font-size: 0.875rem;
+        padding: 0.5rem 0.875rem;
+        font-size: 0.75rem;
+    }
+
+    .metric-item svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    .metric-value {
+        font-size: 0.75rem;
     }
 
     .entry-description {
         font-size: 0.95rem;
+    }
+
+    .entry-content-wrapper {
+        gap: 1.25rem;
+    }
+
+    .entry-image {
+        height: 160px;
+    }
+
+    /* Experience Extra Small Screens */
+    .experience-image-placeholder {
+        height: 160px;
+    }
+
+    /* Research Extra Small Screens */
+    .research-image-placeholder {
+        height: 160px;
     }
 
     .activity-block h4 {
@@ -2238,6 +2733,19 @@ footer p {
         font-size: 0.85rem;
     }
 
+    .course-tag {
+        padding-right: 2.5rem;
+    }
+
+    .course-tag::after {
+        font-size: 1rem;
+        right: 0.875rem;
+    }
+
+    .course-block:hover .course-tag::after {
+        right: 0.75rem;
+    }
+
     /* Extracurricular Extra Small Screens */
     .achievement-board {
         gap: 0.875rem;
@@ -2245,6 +2753,15 @@ footer p {
 
     .achievement-item {
         padding: 1rem;
+    }
+
+    .achievement-item.flute-row {
+        gap: 1.25rem;
+        padding: 1.25rem;
+    }
+
+    .flute-image {
+        height: 200px;
     }
 
     .achievement-category {

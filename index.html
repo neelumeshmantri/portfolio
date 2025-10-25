@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="nav">
@@ -30,14 +32,26 @@
                 <span class="dropdown-trigger" onclick="toggleDropdown(event)">
                     +MORE
                     <svg width="10" height="6" viewBox="0 0 10 6" fill="currentColor">
-                        <path d="M5 6L0 0h10L5 6z"/>
+                        <path d="M5 6L0 0h10L5 6z" />
                     </svg>
                 </span>
                 <div class="dropdown-menu">
-                    <a href="#extracurricular">EXTRA</a>
+                    <a href="#extracurricular">EXTRACURRICULAR</a>
                     <a href="#awards">AWARDS</a>
                     <a href="#volunteering">VOLUNTEERING</a>
                     <a href="#contact">CONTACT</a>
+                    <div class="dropdown-icons">
+                        <a href="https://linkedin.com/in/neelumeshmantri" target="_blank" aria-label="LinkedIn"
+                            class="dropdown-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="GitHub" class="dropdown-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="Neel_Resume.pdf" download aria-label="Download CV" class="dropdown-icon">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -55,26 +69,29 @@
                 <div class="hero-right">
                     <p class="greeting">Hello! I'm</p>
                     <h1>Neel Umesh Mantri</h1>
-                    <p class="subtitle">Mathematics • Computer Science<br>Quantum Computing Enthusiast</p>
+                    <p class="subtitle">Mathematics • Computer Science</p>
                     <div class="hero-buttons">
                         <a href="Neel_Resume.pdf" target="_blank" class="btn">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
                             </svg>
                             Download CV
                         </a>
                         <a href="https://linkedin.com/in/neelumeshmantri" target="_blank" class="btn btn-outline">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                             </svg>
                             LinkedIn
                         </a>
                     </div>
                     <div class="social-links">
                         <a href="mailto:neel.mantri25@gmail.com">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
                             </svg>
                             neel.mantri25@gmail.com
                         </a>
@@ -83,8 +100,9 @@
             </div>
             <a href="#about" class="scroll-indicator">
                 <span>Know More</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 5v14M19 12l-7 7-7-7"/>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 5v14M19 12l-7 7-7-7" />
                 </svg>
             </a>
         </div>
@@ -96,8 +114,16 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-right">
-                    <p>I am a passionate student researcher driven by curiosity and creative problem-solving, with interests spanning mathematics, computer science, and quantum computing. Through programs like RSI(C) at IIT Madras and PACT at Rutgers, I have developed advanced computational thinking, earning top national ranks in Bebras Computing Challenge and Technothlon by IIT Guwahati.</p>
-                    <p>My work bridges ancient wisdom with modern technology—from interdisciplinary research on Tāna-prastāra exploring rhythmic permutations in ancient Indian music, to investigating quantum algorithms and designing educational tools like the Numerico board game. As a student leader, I have organized interschool events, math talk shows, and quizzes, while contributing over 100 animal rescues through volunteering at Blue Cross of India. I seize every opportunity to learn, innovate, and make a meaningful difference.</p>
+                    <p>I am a passionate student researcher driven by curiosity and creative problem-solving, with
+                        interests spanning mathematics, computer science, and quantum computing. Through programs like
+                        RSI(C) at IIT Madras and PACT at Rutgers, I have developed advanced computational thinking,
+                        earning top national ranks in Bebras Computing Challenge and Technothlon by IIT Guwahati.</p>
+                    <p>My work bridges ancient wisdom with modern technology—from interdisciplinary research on
+                        Tāna-prastāra exploring rhythmic permutations in ancient Indian music, to investigating quantum
+                        algorithms and designing educational tools like the Numerico board game. As a student leader, I
+                        have organized interschool events, math talk shows, and quizzes, while contributing over 100
+                        animal rescues through volunteering at Blue Cross of India. I seize every opportunity to learn,
+                        innovate, and make a meaningful difference.</p>
                 </div>
                 <div class="about-left">
                     <img src="chennai.jpg.webp" alt="Chennai Marina Beach" class="about-image">
@@ -144,18 +170,41 @@
             <h3 class="subsection-title">Work Experience</h3>
 
             <div class="experience-item">
+                <div class="experience-content-wrapper">
+                    <div>
+                        <h4>DAV Boys Senior Secondary School, Gopalapuram</h4>
+                        <p class="experience-meta">School Pupil Leader (Head Boy) | Jun 2025 - Apr 2026</p>
+                        <ul>
+                            <li>Unanimously elected</li>
+                            <li>Heading Mathematics Club, Science Club, Debate Club (Founder), Quiz Club, Linguistics Club (Founder)</li>
+                            <li>Invited eminent scientists and professionals for guest lectures</li>
+                            <li>Organizing the school's first ever district level science fair and quiz competition</li>
+                        </ul>
+                    </div>
+                    <div class="experience-image-placeholder">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 196'%3E%3Crect fill='%23f5f5f5' width='280' height='196'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter, sans-serif' font-size='16' font-weight='700' fill='%23999'%3EDAV Boys%3C/text%3E%3C/svg%3E" alt="DAV Boys School">
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-item">
                 <h4>Indian Institute of Technology Madras (IIT-M)</h4>
                 <p class="experience-meta">Student Intern | Research Science Initiative (RSI) | Apr 2025 - Jun 2025</p>
                 <ul>
                     <li>Selected in the top 40 among over 800 applications</li>
-                    <li>Engaged in lectures from eminent scientists including Dr V Balakrishnan and Dr Mangala Sunder Krishnan</li>
-                    <li>Completed independent research project on <a href="https://drive.google.com/file/d/1juD2FEi_N3LuRc3Brc9N38DjvORIj5js/view?usp=sharing" target="_blank">Partial Differential Equation of Heat Diffusion</a></li>
+                    <li>Engaged in lectures from eminent scientists including <a
+                            href="https://physics.iitm.ac.in/people/facultyinfo/balakrishnan.html">Dr V Balakrishnan</a>
+                        and <a href="https://chem.iitm.ac.in/emeritusfaculty/mangal/">Dr Mangala Sunder Krishnan</a>
+                    </li>
+                    <li>Completed independent research project on <a
+                            href="https://drive.google.com/file/d/1juD2FEi_N3LuRc3Brc9N38DjvORIj5js/view?usp=sharing"
+                            target="_blank">Partial Differential Equation of Heat Diffusion</a></li>
                 </ul>
             </div>
 
             <div class="experience-item">
                 <h4>Cognileap Eduventures LLP</h4>
-                <p class="experience-meta">Student Intern | 2024</p>
+                <p class="experience-meta">Student Intern | Jul 2025 - Sep 2025</p>
                 <ul>
                     <li>Developed a Natural Language to SQL Generator using ChatGPT API and Supabase</li>
                     <li>Enhanced the project with KNN indexing for intelligent semantic query suggestions</li>
@@ -167,19 +216,23 @@
             <h3 class="subsection-title">Programming & Languages</h3>
             <div class="tech-grid">
                 <div class="tech-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="Python" class="tech-icon">
                     Python
                 </div>
                 <div class="tech-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript" class="tech-icon">
                     JavaScript
                 </div>
                 <div class="tech-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"
+                        class="tech-icon">
                     HTML
                 </div>
                 <div class="tech-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"
+                        class="tech-icon">
                     CSS
                 </div>
             </div>
@@ -187,19 +240,23 @@
             <h3 class="subsection-title">Products & Tools</h3>
             <div class="tech-grid">
                 <div class="tech-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" alt="LaTeX" class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" alt="LaTeX"
+                        class="tech-icon">
                     LaTeX
                 </div>
                 <div class="tech-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Mathematica_Logo.svg" alt="Mathematica" class="tech-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Mathematica_Logo.svg"
+                        alt="Mathematica" class="tech-icon">
                     Mathematica
                 </div>
                 <div class="tech-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Qiskit-Logo.svg" alt="Qiskit" class="tech-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Qiskit-Logo.svg" alt="Qiskit"
+                        class="tech-icon">
                     Qiskit
                 </div>
                 <div class="tech-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
+                        class="tech-icon">
                     Git
                 </div>
             </div>
@@ -213,63 +270,98 @@
             <h2>Courses, Programs & Workshops</h2>
 
             <div class="courses-masonry">
-                <div class="course-block">
-                    <span class="course-tag">Math.biz</span>
-                    <h4>Data Analytics</h4>
+                <div class="course-block" onclick="openCoursesModal('mathbiz-2024')">
+                    <span class="course-tag">Mahindra University & RAM Foundation </span>
+                    <h4>Math.biz</h4>
                     <p class="course-level">Senior Mid Caps</p>
                     <div class="course-instructors">
                         <p><strong>Instructors:</strong>
-                            <a href="https://www.frankfurt-school.de/en/home/research/staff/Hari-Ramasubramanian" target="_blank">Dr Hari Ramasubramaniam</a>,
-                            <a href="https://www.mahindrauniversity.edu.in/faculty/keerti-pendyal/" target="_blank">Dr Keerti Pendyal</a>,
-                            <a href="https://harishcmenon.com/" target="_blank">Harish Menon</a>
+                            <a href="https://www.frankfurt-school.de/en/home/research/staff/Hari-Ramasubramanian"
+                                target="_blank" onclick="event.stopPropagation()">Dr Hari Ramasubramaniam</a>,
+                            <a href="https://www.mahindrauniversity.edu.in/faculty/keerti-pendyal/" target="_blank" onclick="event.stopPropagation()">Dr
+                                Keerti Pendyal</a>,
+                            <a href="https://harishcmenon.com/" target="_blank" onclick="event.stopPropagation()">Harish Menon</a>
                         </p>
                     </div>
                 </div>
 
-                <div class="course-block">
+                <div class="course-block" onclick="openCoursesModal('ramtp-2024')">
                     <span class="course-tag">RAM Foundation</span>
-                    <h4>RAMTP 2022-2024</h4>
+                    <h4>RAMTP 2024</h4>
                     <p class="course-level">Batch D - Advanced</p>
                     <div class="course-instructors">
                         <p><strong>Instructors:</strong>
-                            <a href="https://appliedmath.ucmerced.edu/content/reshma-menon" target="_blank">Dr Reshma Menon</a>,
-                            <a href="https://aadityanganesh.in" target="_blank">Aadityan Ganesh</a>,
+                            <a href="https://appliedmath.ucmerced.edu/content/reshma-menon" target="_blank" onclick="event.stopPropagation()">Dr Reshma
+                                Menon</a>
                         </p>
                     </div>
                 </div>
 
-                <div class="course-block">
+                <div class="course-block" onclick="openCoursesModal('ramtp-2023')">
+                    <span class="course-tag">RAM Foundation & Chennai Mathematical Institute</span>
+                    <h4>RAMTP 2023</h4>
+                    <p class="course-level">Batch D - Advanced</p>
+                    <div class="course-instructors">
+                        <p><strong>Instructors:</strong>
+                            <a href="https://aadityanganesh.in" target="_blank" onclick="event.stopPropagation()">Aadityan Ganesh</a>,
+                        </p>
+                    </div>
+                </div>
+
+                <div class="course-block" onclick="openCoursesModal('ramtp-2022')">
+                    <span class="course-tag">RAM Foundation</span>
+                    <h4>RAMTP 2022</h4>
+                    <p class="course-level">Batch A</p>
+                    <div class="course-instructors">
+                        <p><strong>Instructors:</strong>
+                            TO BE FILLED
+                        </p>
+                    </div>
+                </div>
+
+                <div class="course-block" onclick="openCoursesModal('pact')">
                     <span class="course-tag">Rutgers/Princeton</span>
                     <h4>PACT</h4>
                     <p class="course-level">Rutgers University</p>
                     <div class="course-instructors">
-                        <p><strong>Instructor:</strong> <a href="https://algorithmicthinking.org/instructors" target="_blank">Dr Rajiv Gandhi</a></p>
+                        <p><strong>Instructor:</strong> <a href="https://algorithmicthinking.org/instructors"
+                                target="_blank" onclick="event.stopPropagation()">Dr Rajiv Gandhi</a></p>
                     </div>
                 </div>
 
-                <div class="course-block">
+                <div class="course-block" onclick="openCoursesModal('vedic-mathrix-2024')">
                     <span class="course-tag">Chinmaya International Foundation</span>
                     <h4>Vedic Mathrix 2024</h4>
                     <p class="course-level">Indian Musicology</p>
                     <div class="course-instructors">
-                        <p><strong>Instructor:</strong> <a href="https://www.raisingamathematician.com/team/vinay-nair" target="_blank">Vinay Nair</a></p>
+                        <p><strong>Instructor:</strong> <a href="https://www.raisingamathematician.com/team/vinay-nair"
+                                target="_blank" onclick="event.stopPropagation()">Vinay Nair</a></p>
                     </div>
                 </div>
 
-                <div class="course-block">
-                    <span class="course-tag">Oxford University</span>
+                <div class="course-block" onclick="openCoursesModal('quantum-wonder')">
+                    <span class="course-tag">RAM Foundation</span>
                     <h4>Quantum Wonder</h4>
                     <p class="course-level">Quantum Mechanics Fundamentals</p>
                     <div class="course-instructors">
-                        <p><strong>Instructor:</strong> <a href="https://www.physics.ox.ac.uk/our-people/janih" target="_blank">Dr Hariom Jani</a></p>
+                        <p><strong>Instructor:</strong> <a href="https://www.physics.ox.ac.uk/our-people/janih"
+                                target="_blank" onclick="event.stopPropagation()">Dr Hariom Jani (Oxford University)</a></p>
                     </div>
                 </div>
 
-                <div class="course-block">
-                    <span class="course-tag">Artifical Intelligence</span>
+                <div class="course-block" onclick="openCoursesModal('edugames-workshop')">
+                    <span class="course-tag">Aarhus University, Denmark</span>
+                    <h4>Educational Games Development Workshop</h4>
+                    <div class="course-instructors">
+                        <p><strong>Organization:</strong> European Conference on Games Based Learning (ECBGL)</p>
+                    </div>
+                </div>
+
+                <div class="course-block" onclick="openCoursesModal('ai-physics-workshop')">
+                    <span class="course-tag">Indian Association of Physics Teachers</span>
                     <h4>AI in Physics Workshop</h4>
                     <div class="course-instructors">
-                        <p><strong>Organization:</strong> Indian Association of Physics Teachers</p>
+                        <p><strong>Instructor:</strong> Dr Arvind Kulkarni</p>
                     </div>
                 </div>
             </div>
@@ -282,24 +374,38 @@
             <h2>Research</h2>
             <div class="research-grid">
                 <div class="research-card">
-                    <h4>Tana-prastara and Mathematics Behind It</h4>
-                    <p class="research-meta">Published in Scientiae Mathematicae Japonicae | 2025</p>
-                    <p>Conducted interdisciplinary research exploring rhythmic permutations in ancient Indian music using combinatorics. Developed novel approaches to understanding Tana prastara and rediscovered factorial number system through Khanda Meru.</p>
-                    <a href="https://drive.google.com/file/d/1zGX1Wu_v7x9rwXauPmjbXgdh8kvD8cat/view?usp=sharing" target="_blank" class="card-link">View Paper</a>
+                    <div class="research-content-wrapper">
+                        <div>
+                            <h4>Tana-prastara and Mathematics Behind It</h4>
+                            <p class="research-meta">Published in Scientiae Mathematicae Japonicae | 2025</p>
+                            <p>Conducted interdisciplinary research exploring rhythmic permutations in ancient Indian music
+                                using combinatorics. Developed novel approaches to understanding Tana prastara and rediscovered
+                                factorial number system through Khanda Meru (from Sangita Ratnakara).</p>
+                            <a href="https://drive.google.com/file/d/1zGX1Wu_v7x9rwXauPmjbXgdh8kvD8cat/view?usp=sharing"
+                                target="_blank" class="card-link">View Paper</a>
+                        </div>
+                        <div class="research-image-placeholder">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 196'%3E%3Crect fill='%23f5f5f5' width='280' height='196'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter, sans-serif' font-size='16' font-weight='700' fill='%23999'%3ETana Prastara%3C/text%3E%3C/svg%3E" alt="Tana Prastara Research">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="research-card">
                     <h4>Solving Optimization with Grover's Algorithm</h4>
                     <p class="research-meta">Presented at AIMER Conference 2025</p>
-                    <p>Analyzed if Grover's Algorithm can solve various optimization problems, where Oracle was the main control variable. Dealt with unstructured search and Satisfiability problems.</p>
-                    <a href="https://docs.google.com/presentation/d/1VlHesBtV81wMK6vpQ2v0sdYT53Gm5j6H/edit?slide=id.p2#slide=id.p2" target="_blank" class="card-link">View Presentation</a>
+                    <p>Analyzed if Grover's Algorithm can solve various optimization problems, where Oracle was the main
+                        control variable. Dealt with unstructured search and Satisfiability problems and Countered the claim by [Liu24] “Time Complexity of the Oracle Phase in Grover’s Algorithm.</p>
+                    <a href="https://docs.google.com/presentation/d/1VlHesBtV81wMK6vpQ2v0sdYT53Gm5j6H/edit?slide=id.p2#slide=id.p2"
+                        target="_blank" class="card-link">View Presentation</a>
                 </div>
 
                 <div class="research-card">
                     <h4>Recreational Mathematics in School Curriculum</h4>
                     <p class="research-meta">Presented at AIMER Conference 2024</p>
-                    <p>Presented benefits of recreational learning and implementation methods in Indian schools. Demonstrated initial prototype of NUMERICO mathematical board game.</p>
-                    <a href="https://docs.google.com/presentation/d/1VlHesBtV81wMK6vpQ2v0sdYT53Gm5j6H/edit?slide=id.p2#slide=id.p2" target="_blank" class="card-link">View Presentation</a>
+                    <p>Presented benefits of recreational learning and implementation methods in Indian schools.
+                        Demonstrated initial prototype of NUMERICO mathematical board game.</p>
+                    <a href="https://docs.google.com/presentation/d/1VlHesBtV81wMK6vpQ2v0sdYT53Gm5j6H/edit?slide=id.p2#slide=id.p2"
+                        target="_blank" class="card-link">View Presentation</a>
                 </div>
             </div>
         </div>
@@ -309,47 +415,61 @@
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
-
             <div class="projects-carousel">
                 <div class="carousel-container">
                     <div class="carousel-track">
                         <button class="carousel-arrow carousel-arrow-left" onclick="moveCarousel(-1)">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M15 18l-6-6 6-6"/>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M15 18l-6-6 6-6" />
                             </svg>
                         </button>
                         <div class="project-carousel-card" data-index="01" onclick="openProjectsModal('numerico')">
                             <div class="project-image-placeholder">
-                                <img src="project-numerico.jpg" alt="NUMERICO Board Game" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22%23999%22%3ENUMERICO%3C/text%3E%3C/svg%3E'">
+                                <img src="project-numerico.jpg" alt="NUMERICO Board Game"
+                                    onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22%23999%22%3ENUMERICO%3C/text%3E%3C/svg%3E'">
+                                <span class="project-cta">Explore →</span>
                             </div>
                             <div class="project-content">
                                 <h4>NUMERICO Board Game</h4>
-                                <p>Winner - International Educational Games Competition 2024 (EDGBL, Denmark). Designed educational math board game teaching mathematical concepts through gameplay... <span class="read-more-link">Read more</span></p>
+                                <p>Winner - International Educational Games Competition 2024 (ECGBL, Denmark). Designed
+                                    educational math board game teaching mathematical concepts through gameplay... <span
+                                        class="read-more-link">Read more</span></p>
                             </div>
                         </div>
 
                         <div class="project-carousel-card" data-index="02" onclick="openProjectsModal('heat-equation')">
                             <div class="project-image-placeholder">
-                                <img src="project-heat-equation.jpg" alt="Differential Heat Equation" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22%23999%22%3EHeat Equation%3C/text%3E%3C/svg%3E'">
+                                <img src="project-heat-equation.jpg" alt="Differential Heat Equation"
+                                    onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22%23999%22%3EHeat Equation%3C/text%3E%3C/svg%3E'">
+                                <span class="project-cta">Explore →</span>
                             </div>
                             <div class="project-content">
                                 <h4>Differential Heat Equation</h4>
-                                <p>IIT Madras Research Project examining the derivation, solutions and applications of the partial differential heat equation in n-dimensions... <span class="read-more-link">Read more</span></p>
+                                <p>IIT Madras Research Project examining the derivation, solutions and applications of
+                                    the partial differential heat equation in n-dimensions... <span
+                                        class="read-more-link">Read more</span></p>
                             </div>
                         </div>
 
-                        <div class="project-carousel-card" data-index="03" onclick="openProjectsModal('vaping-detection')">
+                        <div class="project-carousel-card" data-index="03"
+                            onclick="openProjectsModal('vaping-detection')">
                             <div class="project-image-placeholder">
-                                <img src="project-vaping-detection.jpg" alt="AI Vaping Detection Device" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22%23999%22%3EAI Detection%3C/text%3E%3C/svg%3E'">
+                                <img src="project-vaping-detection.jpg" alt="AI Vaping Detection Device"
+                                    onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22%23999%22%3EAI Detection%3C/text%3E%3C/svg%3E'">
+                                <span class="project-cta">Explore →</span>
                             </div>
                             <div class="project-content">
                                 <h4>AI Vaping Detection Device</h4>
-                                <p>Design Patent (India) Under Review. Innovative device using artificial intelligence to detect vaping in restricted areas... <span class="read-more-link">Read more</span></p>
+                                <p>Design Patent (India) Under Review. Innovative device using artificial intelligence
+                                    to detect vaping in restricted areas... <span class="read-more-link">Read
+                                        more</span></p>
                             </div>
                         </div>
                         <button class="carousel-arrow carousel-arrow-right" onclick="moveCarousel(1)">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 18l6-6-6-6"/>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M9 18l6-6-6-6" />
                             </svg>
                         </button>
                     </div>
@@ -360,6 +480,18 @@
                 <span class="indicator active" onclick="goToSlide(0)"></span>
                 <span class="indicator" onclick="goToSlide(1)"></span>
                 <span class="indicator" onclick="goToSlide(2)"></span>
+            </div>
+
+            <div class="view-all-projects-wrapper">
+                <button class="btn btn-outline view-all-projects-btn" onclick="openProjectsModal()">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"/>
+                        <rect x="14" y="3" width="7" height="7"/>
+                        <rect x="14" y="14" width="7" height="7"/>
+                        <rect x="3" y="14" width="7" height="7"/>
+                    </svg>
+                    View All Projects
+                </button>
             </div>
         </div>
     </section>
@@ -372,94 +504,48 @@
 
             <div class="modal-section" id="modal-numerico">
                 <h3>NUMERICO Educational Board Game</h3>
+                <p><strong>Copyright Application (India) — Under Review</strong></p>
                 <p><strong>Winner - International Educational Games Competition 2024</strong></p>
-                <p><strong>Award:</strong> EDGBL (European Design-Based Gameplay Learning), Denmark</p>
-                <p><strong>Recognition:</strong> Only Indian student to win this prestigious international award</p>
-                <p><strong>Description:</strong> Designed an innovative mathematical board game that teaches core mathematical concepts through engaging gameplay mechanics. The game combines recreational learning with curriculum-aligned educational objectives, making mathematics accessible and enjoyable for students.</p>
-                <p><strong>Impact:</strong> Demonstrated at AIMER Conference 2024, featured in research presentation on recreational mathematics in school curriculum. Currently being considered for implementation in Indian educational institutions.</p>
-                <p><strong>Technologies:</strong> Game Design, Educational Psychology, Curriculum Development</p>
+                <p><strong>Award:</strong> ECGBL (European Conference on Games Based Learning), Denmark</p>
+                <p><strong>Description:</strong> Designed an innovative educational math board game that teaches core mathematical concepts through engaging gameplay mechanics. The game combines recreational learning with curriculum-aligned educational objectives, making mathematics accessible and enjoyable for students.</p>
                 <a href="https://www.youtube.com/watch?v=-TQMuPw9JAA" target="_blank" class="card-link">Watch Demo Video</a>
             </div>
 
             <div class="modal-section" id="modal-heat-equation">
-                <h3>Differential Heat Equation in n-Dimensions</h3>
-                <p><strong>IIT Madras Research Science Initiative (RSI)</strong></p>
-                <p><strong>Duration:</strong> Apr 2025 - Jun 2025</p>
-                <p><strong>Description:</strong> Comprehensive research project examining the derivation, analytical solutions, and practical applications of the partial differential heat equation across multiple dimensions. The project bridges theoretical mathematics with computational implementations.</p>
+                <h3>Differential Heat Equation</h3>
+                <p><strong>Supervisor:</strong> Prof. Dr. Venkatabalaji TE</p>
+                <p>This report examines the derivation, solutions and various applications of the partial differential heat equation.</p>
                 <p><strong>Key Components:</strong></p>
                 <ul style="list-style: disc; padding-left: 2rem; color: #555;">
-                    <li>Rigorous mathematical derivation of heat equation in n-dimensional space</li>
-                    <li>Analytical solution techniques including separation of variables and Fourier series</li>
-                    <li>Numerical methods implementation using Python (NumPy, SciPy, Matplotlib)</li>
-                    <li>Visualization and simulation using Wolfram Mathematica</li>
-                    <li>Applications in thermodynamics, material science, and engineering</li>
+                    <li>Derives the heat equation in n-dimensions</li>
+                    <li>Shows solutions through two different methods: Fourier Series and Finite Difference Method</li>
+                    <li>Includes Python code involving the Explicit method graphing temperature distribution over time</li>
+                    <li>Exploring real life applications using Wolfram Mathematica: critically simulated, modelled and analyzed heat flow in various parts of an automobile</li>
+                    <li>Modified the heat equation by adding the terms of advection and vorticity heating</li>
                 </ul>
-                <p><strong>Outcome:</strong> Successfully completed as part of top 40 selection among 800+ applicants. Project received guidance from eminent IIT Madras faculty including Dr V Balakrishnan and Dr Mangala Sunder Krishnan.</p>
-                <p><strong>Technologies:</strong> Python, Wolfram Mathematica, LaTeX, Partial Differential Equations, Numerical Analysis</p>
-                <a href="https://drive.google.com/file/d/1juD2FEi_N3LuRc3Brc9N38DjvORIj5js/view?usp=sharing" target="_blank" class="card-link">View Full Report</a>
+                <a href="https://drive.google.com/file/d/1juD2FEi_N3LuRc3Brc9N38DjvORIj5js/view?usp=sharing"
+                    target="_blank" class="card-link">View Full Report</a>
             </div>
 
             <div class="modal-section" id="modal-vaping-detection">
                 <h3>AI-Powered Vaping Detection Device</h3>
-                <p><strong>Design Patent Under Review (India)</strong></p>
-                <p><strong>Status:</strong> Patent Application Submitted</p>
-                <p><strong>Description:</strong> Innovative hardware-software system leveraging artificial intelligence and machine learning for real-time detection of vaping activities in restricted areas such as schools, hospitals, and public facilities.</p>
-                <p><strong>Technical Architecture:</strong></p>
-                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
-                    <li>Multi-sensor array for chemical vapor detection</li>
-                    <li>Machine learning model trained on vapor signature patterns</li>
-                    <li>Real-time classification and alert system</li>
-                    <li>Low-power embedded system design for long-term deployment</li>
-                    <li>IoT integration for centralized monitoring</li>
-                </ul>
-                <p><strong>Innovation:</strong> Combines hardware engineering with advanced AI algorithms to address growing public health concerns. The device provides non-invasive, accurate detection while respecting privacy considerations.</p>
-                <p><strong>Applications:</strong> Educational institutions, healthcare facilities, public transportation, government buildings</p>
-                <p><strong>Technologies:</strong> Machine Learning, Hardware Design, IoT, Embedded Systems, Sensor Integration</p>
-                <a href="https://drive.google.com/file/d/1bPIHOmqkiwtRa9Sqgh8ZbGpSQ9-VPVDE/view?usp=sharing" target="_blank" class="card-link">View Design Documentation</a>
+                <p><strong>Design Patent (India) — Under Review</strong></p>
+                <p>This device controls the AI and CCTV sensors to detect vaping in real time. Once detected, the app will alert designated personnel such as school/college authorities and security teams to take immediate action. We parents are very much concerned about the wide prevalence of vaping in educational institutions like coaching centres, parties etc.</p>
+                <p>Children hide vapes (e-cigarettes) in their pockets and socks. I really wanted to find a solution and shared this new idea of developing an AI-based device. We are still developing an app which uses machine learning and AI technologies not to just alert but also identify the students vaping. The devices can be installed in the corridors of schools, colleges, restaurants, hotels, malls, and places which are frequented by youngsters.</p>
+                <a href="https://drive.google.com/file/d/1bPIHOmqkiwtRa9Sqgh8ZbGpSQ9-VPVDE/view?usp=sharing"
+                    target="_blank" class="card-link">View Design Documentation</a>
             </div>
 
-            <div class="modal-section" id="modal-sql-generator">
-                <h3>Natural Language to SQL Generator</h3>
-                <p><strong>Cognileap Eduventures LLP - Internship Project</strong></p>
-                <p><strong>Duration:</strong> 2024</p>
-                <p><strong>Description:</strong> Full-stack application enabling users to query databases using natural language, eliminating the need for SQL knowledge. The system translates plain English questions into optimized SQL queries and presents results in user-friendly formats.</p>
-                <p><strong>Technical Stack:</strong></p>
-                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
-                    <li><strong>Backend:</strong> FastAPI (Python) for high-performance API endpoints</li>
-                    <li><strong>Frontend:</strong> Next.js for responsive, modern user interface</li>
-                    <li><strong>AI Integration:</strong> ChatGPT API for natural language understanding</li>
-                    <li><strong>Database:</strong> Supabase for scalable data storage</li>
-                    <li><strong>ML Enhancement:</strong> KNN indexing for intelligent semantic query suggestions</li>
-                    <li><strong>DevOps:</strong> Docker containerization, Render (backend), Vercel (frontend)</li>
-                </ul>
-                <p><strong>Key Features:</strong></p>
-                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
-                    <li>Context-aware query interpretation</li>
-                    <li>Intelligent query suggestions based on past interactions</li>
-                    <li>Multi-table join support</li>
-                    <li>Query optimization and result caching</li>
-                    <li>Data visualization options</li>
-                </ul>
-                <p><strong>Technologies:</strong> Python, FastAPI, Next.js, ChatGPT API, Supabase, Docker, Machine Learning (KNN)</p>
+            <div class="modal-section" id="modal-mars-ecosystem">
+                <h3>Mars Self Sustaining Eco System Model</h3>
+                <p><strong>3rd Place in State</strong></p>
+                <p><strong>Exhibition:</strong> Tamil Nadu Science and Technology Centre</p>
             </div>
 
-            <div class="modal-section" id="modal-quantum-research">
-                <h3>Quantum Algorithm Research</h3>
-                <p><strong>Grover's Algorithm for Optimization Problems</strong></p>
-                <p><strong>Presented at AIMER Conference 2025</strong></p>
-                <p><strong>Research Focus:</strong> Investigation into the applicability of Grover's quantum search algorithm for solving various optimization problems, with particular emphasis on Oracle design and implementation.</p>
-                <p><strong>Research Areas:</strong></p>
-                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
-                    <li>Unstructured search problems in large datasets</li>
-                    <li>Boolean satisfiability (SAT) problems</li>
-                    <li>Combinatorial optimization</li>
-                    <li>Oracle construction for different problem domains</li>
-                    <li>Quantum speedup analysis and benchmarking</li>
-                </ul>
-                <p><strong>Methodology:</strong> Theoretical analysis combined with practical implementations using Qiskit on IBM Quantum computers. Evaluated performance against classical algorithms across various problem sizes.</p>
-                <p><strong>Findings:</strong> Demonstrated quadratic speedup for specific problem classes, identified optimal Oracle designs, and established limitations for real-world applications on current NISQ devices.</p>
-                <p><strong>Technologies:</strong> Qiskit, IBM Quantum, Python, Quantum Computing, Algorithm Analysis</p>
-                <a href="https://docs.google.com/presentation/d/1VlHesBtV81wMK6vpQ2v0sdYT53Gm5j6H/edit?slide=id.p2#slide=id.p2" target="_blank" class="card-link">View Research Presentation</a>
+            <div class="modal-section" id="modal-enhanced-weathering">
+                <h3>Enhanced Weathering</h3>
+                <p><strong>2nd Place</strong></p>
+                <p><strong>Competition:</strong> Eco Fair</p>
             </div>
         </div>
     </div>
@@ -470,45 +556,68 @@
             <h2>Extracurricular Activities</h2>
 
             <div class="achievement-board">
+                <!-- Full width horizontal flute row -->
+                <div class="achievement-item flute-row" onclick="openExtracurricularModal('flute')">
+                    <div class="flute-content">
+                        <div class="achievement-category">Flute Performance</div>
+                        <div class="achievement-stats">
+                            <span>Self Trained Flautist</span>
+                            <span>Bansuri/Bamboo Flute</span>
+                            <span>10+ Public Performances</span>
+                        </div>
+                        <div class="achievement-roles">Annual Days • Cultural Events • WSC Competitions</div>
+                    </div>
+                    <div class="flute-image">
+                        <img src="neel_flute.jpg" alt="Neel playing flute">
+                    </div>
+                </div>
+
                 <!-- Large block -->
                 <div class="achievement-item large" onclick="openExtracurricularModal('mun')">
                     <div class="achievement-category">Model United Nations</div>
                     <div class="achievement-stats">
-                        <span>15+ Conferences</span>
+                        <span>25+ Conferences</span>
                         <span>5 Best Delegate</span>
-                        <span>5 High Commendations</span>
+                        <span>Chair in International Conferences</span>
                     </div>
-                    <div class="achievement-roles">Chair • Secretariat • Editorial Head</div>
+                    <div class="achievement-roles">Chair Person • Secretariat • Editorial Head</div>
                 </div>
 
                 <!-- Medium blocks -->
-                <div class="achievement-item medium" onclick="openExtracurricularModal('olympiads')">
-                    <div class="achievement-category">Academic Olympiads</div>
-                    <div class="achievement-highlight">Gold • Top 50 National • Rank 1</div>
-                    <div class="achievement-detail">AMO, IMO, Linguistics, PiMO, Ramanujan</div>
+                <div class="achievement-item medium" onclick="openExtracurricularModal('leadership')">
+                    <div class="achievement-category">School Leadership</div>
+                    <div class="achievement-highlight">Veer Badge • Founded 2 Clubs</div>
+                    <div class="achievement-detail">Clubs: Math, Science, Quiz, Linguistics, Debate</div>
                 </div>
 
                 <div class="achievement-item medium" onclick="openExtracurricularModal('debate')">
                     <div class="achievement-category">Debate & Oratory</div>
                     <div class="achievement-highlight">Semi-finalist IIT Madras</div>
-                    <div class="achievement-detail">ISDC Selection • Rhetoric 2nd Place • MoC</div>
+                    <div class="achievement-detail">ISDS Tournament • Rhetoric 2nd Place • WSDC</div>
                 </div>
 
                 <!-- Small blocks -->
-                <div class="achievement-item small" onclick="openExtracurricularModal('leadership')">
-                    <div class="achievement-category">School Leadership</div>
-                    <div class="achievement-detail">Veer Badge • Founded 2 Clubs • Organizer 5 Clubs</div>
-                </div>
-
-                <div class="achievement-item small" onclick="openExtracurricularModal('writing')">
+                <div class="achievement-item medium" onclick="openExtracurricularModal('writing')">
                     <div class="achievement-category">Creative Writing</div>
                     <div class="achievement-detail">3rd Place National • State Best Performer</div>
                 </div>
 
-                <div class="achievement-item small" onclick="openExtracurricularModal('competitions')">
-                    <div class="achievement-category">Competitions</div>
+                <div class="achievement-item medium" onclick="openExtracurricularModal('competitions')">
+                    <div class="achievement-category">Quizzes</div>
                     <div class="achievement-detail">Climate Olympiad QF • G20 Top 32 • TN Quiz 2nd</div>
                 </div>
+            </div>
+
+            <div class="view-all-activities-wrapper">
+                <button class="btn btn-outline view-all-activities-btn" onclick="openExtracurricularModal()">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                    View All Activities
+                </button>
             </div>
         </div>
     </section>
@@ -521,47 +630,224 @@
 
             <div class="modal-section" id="modal-mun">
                 <h3>Model United Nations</h3>
-                <p><strong>15+ Conferences • 5 Best Delegate Awards</strong></p>
-                <p><strong>Chair Positions:</strong> IIMUN'24 (Niti Aayog), HeartsMUN'24, VMEMUN'23 (80+ delegates), ChinMUN'23, UNIO AMJMUN'24</p>
-                <p><strong>Secretariat Roles:</strong> Head of Editorial/Content at Kartavya MUN, Ethereal MUN, Delcor MUN, Ascent MUN</p>
-                <p><strong>Awards:</strong> 5 Best Delegate, 5 High Commendations, 2 Special Mentions</p>
+                <p><strong>25+ Conferences • 5 Best Delegate • 5 Chair Positions • 3 Secretariat Roles</strong></p>
+
+                <p><strong>Best Delegate Awards:</strong></p>
+                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
+                    <li>DISEC - GMUN'24</li>
+                    <li>UNHRC - IMUN Sept'23</li>
+                    <li>ECOFIN - PSMUN'23</li>
+                    <li>WHO - SANMUN'23</li>
+                    <li>WHO - IMUN June'24</li>
+                </ul>
+
+                <p><strong>Chair Positions:</strong></p>
+                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
+                    <li><strong>Co-Chairperson IIMUN 2024:</strong> Co-Chaired largest committee Niti Aayog for IIMUN Madurai 2024</li>
+                    <li><strong>Guest Chairperson UNIO AMJMUN 2024:</strong> Chaired NATO</li>
+                    <li><strong>Chairperson HeartsMUN 2024:</strong> Chaired ECOSOC</li>
+                    <li><strong>Co-Chairperson ChinMUN 2023:</strong> Co-Chaired ICC (International Criminal Court)</li>
+                    <li><strong>Main Chairperson VMEMUN 2023:</strong> Chaired largest committee DISEC with 80+ delegates</li>
+                </ul>
+
+                <p><strong>Secretariat & Organizing Roles:</strong></p>
+                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
+                    <li>Head of Editorial and Chief of Content Writing - Kartavya MUN 2024</li>
+                    <li>Head of Content Writing - Ethereal MUN 2024</li>
+                    <li>Head of Content Writing - Delcor MUN 2024</li>
+                </ul>
+
+                <p><strong>Additional Awards:</strong></p>
+                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
+                    <li><strong>High Commendations:</strong> UNHRC-APLMUN'23, WHO-PSMUN'22, DISEC-ChinMUN'22, ICJ-CHSVMUN'22, AWWA ODF</li>
+                    <li><strong>Special Mentions:</strong> UNHRC-CVMUN'23, UNPBC-ROTAMUN'23</li>
+                    <li><strong>Verbal Mentions:</strong> UNHRC-IMMUN'23, DISEC-EDMUN'24</li>
+                </ul>
+
+                <p><strong>Other Conference Experiences:</strong> UNHRC-CHEMUN'22, ICJ-SishMUN'22, UNHRC-IMMUN-2022, ECOSOC-MilMUN'23</p>
             </div>
 
-            <div class="modal-section" id="modal-olympiads">
-                <h3>Academic Olympiads</h3>
-                <p><strong>Aryabhatta Math Olympiad:</strong> Gold Medalist & Merit Receiver</p>
-                <p><strong>IMO Selection:</strong> Top 900 in India</p>
-                <p><strong>Linguistics Olympiad:</strong> Top 50 in India</p>
-                <p><strong>PiMO:</strong> Rank 1 (4000+ students)</p>
-                <p><strong>Ramanujan Math Competition:</strong> Merit Holder</p>
+            <div class="modal-section" id="modal-flute">
+                <h3>Flute Performance</h3>
+                <p><strong>Self Trained Flautist • Bansuri/Bamboo Flute Player</strong></p>
+                <p><strong>10+ Public Performances</strong> across school, community, and cultural events</p>
+                <p><strong>Performance Venues:</strong></p>
+                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
+                    <li><strong>Annual Day 2023:</strong> School annual cultural program</li>
+                    <li><strong>Annual Day 2024:</strong> School annual cultural program</li>
+                    <li><strong>Vedic Mathrix 2024:</strong> Chinmaya International Foundation event</li>
+                    <li><strong>RAMTP 2023:</strong> RAM Foundation mathematics program</li>
+                    <li><strong>RAMTP 2024:</strong> RAM Foundation mathematics program</li>
+                    <li><strong>Math.biz 2024:</strong> Mahindra University & RAM Foundation event</li>
+                    <li><strong>WSC 2022:</strong> World Scholar's Cup regional/global rounds</li>
+                    <li><strong>WSC 2023:</strong> World Scholar's Cup regional/global rounds</li>
+                    <li><strong>WSC 2024:</strong> World Scholar's Cup regional/global rounds</li>
+                    <li><strong>Blind School:</strong> Community service performance for visually impaired students</li>
+                </ul>
+                <p><strong>Musical Background:</strong> Self-taught in traditional Indian bamboo flute (Bansuri), developed skills through dedicated practice and performance experience</p>
+                <p><strong>Skills:</strong> Classical and contemporary flute performance, stage presence, cultural representation, traditional Indian music</p>
             </div>
 
             <div class="modal-section" id="modal-debate">
                 <h3>Debate & Oratory</h3>
-                <p><strong>Rhetoric'23:</strong> 2nd Place</p>
-                <p><strong>TN Debating Championship (IIT Madras):</strong> Semi-finalist</p>
-                <p><strong>ISDC:</strong> Indian Schools Debate Competition Selection</p>
-                <p><strong>Master of Ceremony:</strong> DAV Annual Athletic Meet (8 schools, 2023)</p>
+                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
+                    <li>Secured 2nd place in Rhetoric'23 Debate Tournament as part of PS Literary Fest</li>
+                    <li>Participated in Parliamentary Debate of AMPERSAND 2023 conducted by Chettinad Vidyashram</li>
+                    <li>Participated in ISDS National Tournament</li>
+                    <li>Qualified to Semi Finals at Tamil Nadu Debating Championship organised by Indian Debating League and Oratory Club, IIT Madras</li>
+                    <li>Secured 2nd place in Rhetoric'22 Debate Tournament as part of PS Literary Fest</li>
+                    <li>Qualified to Semi Finals at POLEMIC Debating Championship</li>
+                    <li>Qualified upto last stage of selection of Indian team for World Schools Debating Championship (WSDC)</li>
+                </ul>
             </div>
 
             <div class="modal-section" id="modal-leadership">
                 <h3>School Leadership</h3>
                 <p><strong>Chhatra Salaahkaar:</strong> Veer Badge Holder, Student Advisor</p>
                 <p><strong>Founder:</strong> Linguistics Club, Debate Club</p>
-                <p><strong>Organizer:</strong> Math Club, CS Club, Quiz Club, Health Club, Astronomy Club</p>
+                <p><strong>Organizer:</strong> Math Club, Quiz Club, Health Club</p>
+                <p><strong>Anchor, Annual Athletic Meet - DAV Group of Schools, Chennai:</strong></p>
+                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
+                    <li>Anchored and announced for the Annual Athletic Meet of DAV Group of Schools of Tamil Nadu (Chennai, Puducherry, etc.)</li>
+                    <li>Managed the anchoring group for the event which involved almost 8 schools</li>
+                </ul>
             </div>
 
             <div class="modal-section" id="modal-writing">
                 <h3>Creative Writing</h3>
-                <p><strong>Government of India Essay Competition:</strong> 3rd Place</p>
-                <p><strong>Fever Junior Championship:</strong> Best Performer in State</p>
+                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
+                    <li>Won 3rd position in Hindi Essay Writing Competition conducted by Ministry of Micro, Small & Medium Enterprises, Government of India</li>
+                    <li>Won 3rd position in the Creative Writing Competition (English) of MATRICE'23 conducted by SBOA Matriculation and Hr. Sec. School among 50 participants from 25+ schools (+Rs 500 cash prize)</li>
+                    <li>Participated in Hindi Essay Writing Competition conducted by Ministry of Micro, Small & Medium Enterprises, Government of India</li>
+                    <li>Won 2nd place in Creative Writing Competition conducted at my school</li>
+                    <li>Plastivision India 2023 Essay Competition</li>
+                </ul>
             </div>
 
             <div class="modal-section" id="modal-competitions">
                 <h3>Competitions & Quizzes</h3>
-                <p><strong>Climate Science Olympiad:</strong> Quarter-finalist</p>
-                <p><strong>G20-THINQ 2024:</strong> Top 32 (Indian Navy Quiz)</p>
-                <p><strong>Science & Technology Quiz:</strong> 2nd Place (TN Govt)</p>
+                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
+                    <li>Won 2nd place in SASTRA-Ramanujan Quiz among 100+ teams</li>
+                    <li>Reached Quarter Finals in Climate Science Olympiad</li>
+                    <li>Qualified Upto Quarter Finals (top 32 teams in India) in G20-THINQ (The Indian Navy Quiz) organised jointly by G20 secretariat, Navy Welfare and Wellness Association, Indian Navy</li>
+                    <li>Won 2nd Place in Science & Technology Quiz (TN Govt)</li>
+                    <li>Participated in Puranava-Interschool Heritage Quiz</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Courses Modal -->
+    <div id="coursesModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeCoursesModal()">&times;</span>
+            <h2>Courses, Programs & Workshops - Full Details</h2>
+
+            <div class="modal-section" id="modal-ramtp-2024">
+                <h3>RAMTP 2024</h3>
+                <p><strong>Raising A Mathematician Training Program</strong></p>
+                <p><strong>Venue:</strong> Chinmaya International Residential School (CIRS), Coimbatore</p>
+                <p><strong>Duration:</strong> One week residential program</p>
+                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
+                    <li>Selected for the second time for <strong>Batch D</strong> which is the most advanced batch</li>
+                    <li>Participated in intensive mathematics training conducted by Raising a Mathematician Foundation</li>
+                    <li>Engaged in advanced mathematical concepts and problem-solving techniques</li>
+                </ul>
+            </div>
+
+            <div class="modal-section" id="modal-mathbiz-2024">
+                <h3>Math.biz 2024</h3>
+                <p><strong>Residential Camp at Mahindra University, Hyderabad</strong></p>
+                <p><strong>Duration:</strong> 10 day residential program</p>
+                <p><strong>Conducted by:</strong> Raising a Mathematician Foundation</p>
+                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
+                    <li>Selected for the <strong>Senior Mid Caps batch</strong></li>
+                    <li>Participated in advanced mathematical training and collaborative learning sessions</li>
+                    <li>Engaged with leading mathematicians and educators</li>
+                </ul>
+            </div>
+
+            <div class="modal-section" id="modal-vedic-mathrix-2024">
+                <h3>Vedic Mathrix 2024</h3>
+                <p><strong>Ancient Indian Musicology and Mathematical Algorithms</strong></p>
+                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
+                    <li>Learnt about Math in ancient Indian musicology and algorithms</li>
+                    <li>Loved the topics taken and went on to do a research and write a paper on a topic whose basics were taught here</li>
+                    <li>Explored the mathematical foundations of traditional Indian music theory</li>
+                </ul>
+            </div>
+
+            <div class="modal-section" id="modal-ramtp-2023">
+                <h3>RAMTP 2023</h3>
+                <p><strong>Raising A Mathematician Training Program</strong></p>
+                <p><strong>Venue:</strong> Chennai Mathematical Institute</p>
+                <p><strong>Duration:</strong> One week residential program</p>
+                <p><strong>Conducted by:</strong> Raising a Mathematician Foundation</p>
+                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
+                    <li>Selected for <strong>Batch D</strong> which is the most advanced batch</li>
+                    <li>Learned 6+ hours per day about blockchains from <strong>Aadityan Ganesh</strong> (PhD in blockchains from Princeton)</li>
+                    <li>Learned <strong>Galois Theory</strong> from <strong>Prof. S Muralidharan</strong> (PhD in Math from TIFR)</li>
+                </ul>
+            </div>
+
+            <div class="modal-section" id="modal-pact">
+                <h3>PACT</h3>
+                <p><strong>Program in Algorithmic and Combinatorial Thinking</strong></p>
+                <p><strong>Conducted by:</strong> Prof Rajiv Gandhi</p>
+                <p><strong>Institutions:</strong> Rutgers University and Princeton University</p>
+                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
+                    <li>Developed advanced computational thinking skills</li>
+                    <li>Explored algorithmic problem-solving and combinatorial mathematics</li>
+                </ul>
+            </div>
+
+            <div class="modal-section" id="modal-ai-physics-workshop">
+                <h3>Workshop on ARTIFICIAL INTELLIGENCE AWARENESS IN PHYSICS</h3>
+                <p><strong>National Level Online Workshop</strong></p>
+                <p><strong>Duration:</strong> February 15th to 20th, 2024</p>
+                <p><strong>Organized by:</strong> RC 12A IAPT (Indian Association of Physics Teachers)</p>
+                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
+                    <li>Participated in national level workshop exploring AI applications in physics</li>
+                    <li>Learned about intersection of artificial intelligence and physics research</li>
+                </ul>
+            </div>
+
+            <div class="modal-section" id="modal-quantum-wonder">
+                <h3>Quantum Wonder</h3>
+                <p><strong>Quantum Mechanics Fundamentals</strong></p>
+                <p><strong>Instructor:</strong> Prof Hariom Jani (Royal Society University Research Fellow - Oxford University)</p>
+                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
+                    <li>Taught basics of Quantum mechanics</li>
+                    <li>Learned fundamental concepts from leading researcher at Oxford University</li>
+                    <li>Explored quantum theory and its applications</li>
+                </ul>
+            </div>
+
+            <div class="modal-section" id="modal-ramtp-2022">
+                <h3>RAMTP 2022</h3>
+                <p><strong>Raising A Mathematician Training Program</strong></p>
+                <p><strong>Format:</strong> One week residential program (conducted online)</p>
+                <p><strong>Conducted by:</strong> Raising a Mathematician Foundation</p>
+                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
+                    <li>Introduced to quadratic indeterminate equations</li>
+                    <li>Functions in number theory</li>
+                    <li>Mathematical modelling</li>
+                    <li>Proof techniques</li>
+                    <li>Cryptography</li>
+                    <li>Linear programming</li>
+                </ul>
+            </div>
+
+            <div class="modal-section" id="modal-edugames-workshop">
+                <h3>Educational Games Development Workshop</h3>
+                <p><strong>13th International Educational Games Competition</strong></p>
+                <p><strong>Venue:</strong> Aarhus University, Denmark</p>
+                <p><strong>Organization:</strong> European Conference on Games Based Learning (ECGBL)</p>
+                <ul style="list-style: disc; padding-left: 2rem; color: #555;">
+                    <li><strong>Won first place</strong> at the 13th International Educational Games Competition Student Category</li>
+                    <li>Participated in workshop as part of European Conference on Games Based Learning</li>
+                    <li>Conducted at Aarhus University, Denmark</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -571,12 +857,32 @@
         <div class="container">
             <h2>Awards</h2>
             <div class="awards-list">
-                <div class="award-item" data-type="recognition">Best Outgoing Student - DAV Boys Senior Secondary School, Gopalapuram (2025)</div>
-                <div class="award-item" data-type="recognition">Letter of appreciation from Prime Minister of India for Pariksha Pe Charcha</div>
-                <div class="award-item" data-type="academic">Bebras Computing Challenge: All India Rank 3 (2022), Rank 2 (2023, 2024)</div>
-                <div class="award-item" data-type="academic">Technothlon by IIT Guwahati: All India Rank 2 Prelims, 2nd place Mains 2024</div>
+                <div class="award-item" data-type="recognition">Best Outgoing Student - DAV Boys Senior Secondary
+                    School, Gopalapuram (2025)</div>
+                <div class="award-item" data-type="recognition">Letter of appreciation from Prime Minister of India for
+                    Pariksha Pe Charcha</div>
+                <div class="award-item" data-type="academic">Bebras Computing Challenge: All India Rank 3 (2022), Rank 2
+                    (2023, 2024)</div>
+                <div class="award-item" data-type="academic">Technothlon by IIT Guwahati: All India Rank 2 Prelims, 2nd
+                    place Mains 2024</div>
                 <div class="award-item" data-type="academic">Stanford Math Tournament 2025 - Honourable Mention</div>
-                <div class="award-item" data-type="competition">World Scholar's Cup: 24 gold medals, 10 silver medals, 5 trophies</div>
+                <div class="award-item" data-type="competition">World Scholar's Cup: 24 gold medals, 10 silver medals, 5
+                    trophies</div>
+                <div class="award-item" data-type="competition">Enhanced Weathering - 2nd Place at Eco Club Fair for hands-on innovative solution model</div>
+                <div class="award-item" data-type="competition">Science Project Exhibition - 3rd Place at Periyar Science and Technology Centre (TN Govt, Mars ecosystem model)</div>
+                <div class="award-item" data-type="competition">India Innovation Challenge - Education app idea addressing current system challenges</div>
+                <div class="award-item" data-type="competition">Craft the Future Challenge - Theoretical design for food industry machine</div>
+                <div class="award-item" data-type="recognition">Green Olympiad 2023 - Certificate of Merit</div>
+                <div class="award-item" data-type="competition">Open Science and Technology Quiz - 2nd Place (TN Govt, Periyar Centre, 200+ participants)</div>
+                <div class="award-item" data-type="competition">Inter School Math Talent Math Gym - 1st Place (SBOA, 15 teams from 15 schools)</div>
+                <div class="award-item" data-type="competition">Galaxy Science and Technology Quiz - 5th Place (Rotary Club, 200+ teams)</div>
+                <div class="award-item" data-type="academic">Ramanujan National Mathematics Competition - Round 1 with 85% score, interview cleared in 61 seconds</div>
+                <div class="award-item" data-type="academic">Aryabhatta Math Olympiad</div>
+                <div class="award-item" data-type="academic">IOQM RMO 2023</div>
+                <div class="award-item" data-type="academic">IOQM RMO 2024</div>
+                <div class="award-item" data-type="academic">PLO 2023</div>
+                <div class="award-item" data-type="academic">PiMO (Piverb Math Olympiad) - Rank 1 amongst 4000+ international students</div>
+                <div class="award-item" data-type="competition">Aha Quiz - District 3rd Prize in senior category (nationwide competition)</div>
             </div>
         </div>
     </section>
@@ -585,22 +891,6 @@
     <section id="volunteering">
         <div class="container">
             <h2>Social Service & Volunteering</h2>
-
-            <!-- Impact Summary -->
-            <div class="volunteer-impact-bar">
-                <div class="impact-stat">
-                    <span class="impact-number">500+</span>
-                    <span class="impact-label">Hours Served</span>
-                </div>
-                <div class="impact-stat">
-                    <span class="impact-number">100+</span>
-                    <span class="impact-label">Lives Impacted</span>
-                </div>
-                <div class="impact-stat">
-                    <span class="impact-number">3</span>
-                    <span class="impact-label">Organizations</span>
-                </div>
-            </div>
 
             <!-- Volunteer Organizations - Editorial Layout -->
             <div class="volunteer-timeline">
@@ -611,20 +901,34 @@
                         <p class="entry-period">Oct 2021 - Present</p>
                         <div class="entry-metrics">
                             <div class="metric-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
                                 <span class="metric-value">100+</span> Rescues
                             </div>
                             <div class="metric-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
                                 <span class="metric-value">500+</span> Hours
                             </div>
                         </div>
                     </div>
                     <div class="entry-right">
-                        <p class="entry-description">Trained in tactical animal rescues and darting techniques, contributing to over 100 successful rescue operations. Actively involved in crematorium records management, token organization, and maintenance of cattle sheds and puppy kennels.</p>
-                        <div class="entry-recognition">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                            <a href="https://www.instagram.com/p/DFRx6X_Nc3R/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">Best Volunteer of the Month (Oct'24)</a>
+                        <div class="entry-content-wrapper">
+                            <div>
+                                <p class="entry-description">Trained in tactical animal rescues and darting techniques,
+                                    contributing to over 100 successful rescue operations. Actively involved in crematorium
+                                    records management, token organization, and maintenance of cattle sheds and puppy kennels.
+                                </p>
+                                <a href="https://www.instagram.com/p/DFRx6X_Nc3R/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="card-link" style="font-size: 0.875rem; display: block; margin-top: 0.75rem;">
+                                    <i class="fab fa-instagram" style="margin-right: 0.25rem;"></i>View on Instagram
+                                </a>
+                            </div>
+                            <div class="entry-image">
+                                <img src="bluecross-volunteer.jpg" alt="Blue Cross Volunteering">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -639,12 +943,13 @@
                             <div class="activity-block">
                                 <h4>ROOTS Camp</h4>
                                 <p class="activity-date">Nov 2024</p>
-                                <p>Aided faculty, managed sessions, wrote synopses, cleared student doubts, and mentored students in mathematics.</p>
+                                <p>Aided faculty, managed sessions, wrote synopses, cleared student doubts, and mentored
+                                    students in mathematics.</p>
                             </div>
                             <div class="activity-block">
                                 <h4>All Girls Maths Nurture Camp</h4>
                                 <p class="activity-date">Dec 2025</p>
-                                <p>Invited to volunteer and mentor young female students in mathematics education.</p>
+                                <p>Invited to volunteer for All Girls Maths Nurture Camp (AGMNC) .</p>
                             </div>
                         </div>
                     </div>
@@ -656,7 +961,8 @@
                         <p class="entry-period">Jun 2022 - Sep 2022</p>
                     </div>
                     <div class="entry-right">
-                        <p class="entry-description">Conducted neighbourhood heroes' survey and COVID impact interviews in collaboration with Inner Wheels Club. Gathered community insights and documented pandemic recovery efforts across local neighborhoods.</p>
+                        <p class="entry-description">Conducted neighbourhood heroes' survey and COVID impact interviews
+                            in collaboration with Inner Wheels Club.</p>
                     </div>
                 </div>
 
@@ -668,10 +974,12 @@
     <section id="contact">
         <div class="container">
             <h2>Contact</h2>
-            <p>I'm always interested in hearing about new opportunities, collaborations, or just connecting with fellow enthusiasts in mathematics, computer science, and quantum computing.</p>
+            <p>I'm always interested in hearing about new opportunities, collaborations, or just connecting with fellow
+                enthusiasts in mathematics, computer science, and quantum computing.</p>
             <div class="contact-info">
                 <p><strong>Email:</strong> <a href="mailto:neel.mantri25@gmail.com">neel.mantri25@gmail.com</a></p>
-                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/neelumeshmantri" target="_blank">linkedin.com/in/neelumeshmantri</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/neelumeshmantri"
+                        target="_blank">linkedin.com/in/neelumeshmantri</a></p>
                 <p><strong>Location:</strong> Chennai, Tamil Nadu, India</p>
             </div>
         </div>
@@ -686,4 +994,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
